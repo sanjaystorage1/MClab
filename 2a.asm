@@ -1,0 +1,15 @@
+ORG 0000h 
+MOV R0, #0FFh 
+MOV R1, #7Fh 
+MOV R2, #0FFh 
+MOV R3, #7Fh 
+MOV A, R0 
+ADD A, R2 
+MOV R4, A 
+MOV A, R1 
+ADDC A, R3  
+MOV R5, A 
+JNC L1
+MOV R6, #01 
+L1: SJMP $ 
+END 

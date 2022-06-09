@@ -1,0 +1,16 @@
+ORG 0000H 
+CLR C 
+MOV R0, #7Fh
+MOV R1, #7Fh 
+MOV R2, #6Fh 
+MOV R3, #5Fh 
+MOV A, R0 
+SUBB A, R2 
+MOV R4, A 
+MOV A, R1 
+SUBB A, R3 
+MOV R5, A 
+JNC L1
+MOV R6, #01 
+L1: SLMP $ 
+END 
