@@ -1,0 +1,9 @@
+ORG 0000h 
+MOV R0, #0FFh 
+MOV A, R0 
+MOV B, R0 
+MUL AB 
+MOV R1, A
+MOV R2, B
+SJMP $
+END
