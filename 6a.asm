@@ -1,0 +1,12 @@
+ORG 0000h 
+MOV A, #29h
+MOV R2, A 
+ANL A, #0Fh  
+ORL A, #30h 
+MOV R5, A 
+MOV A, R2 
+ANL A, #0F0h 
+SWAP A 
+ORL A, #30h 
+MOV R6, A 
+END 
