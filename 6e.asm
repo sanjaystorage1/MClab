@@ -1,0 +1,12 @@
+ORG 000h
+MOV A, 40h 
+ANL A, #0Fh
+MOV 42h, A 
+MOV A, 40h 
+ANL A, #0F0h 
+SWAP A 
+MOV 0F0, #0Ah
+MUL AB 
+ADD A, 42h 
+MOV 42h, A 
+END
