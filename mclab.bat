@@ -1,16 +1,17 @@
+
 @echo off
 cls
 echo ------------------------------------------------------------------------------------------
-echo made by sanjaybyranna
+echo *  made by sanjaybyranna
 echo ------------------------------------------------------------------------------------------
 echo.
-set /p answer1= Enter the experiment number : 
+set /p answer1= *  Enter the experiment number : 
 echo.
 echo ------------------------------------------------------------------------------------------
 echo.
-set /p answer2= Do a naming cermony for the file with .asm Extension : 
+set /p answer2=*  Do a naming cermony for the file with .asm Extension : 
 echo.
-echo U File is being downloaded ..................
+echo *  U File is being downloaded ..................
 echo.
 echo ------------------------------------------------------------------------------------------
 cls
@@ -20,18 +21,21 @@ curl -o %answer2% https://raw.githubusercontent.com/sanjaystorage1/MClab/main/%a
 echo.
 echo ------------------------------------------------------------------------------------------
 echo.
-pause
+set /p answer5= *  Press " Enter " to continue... 
 cls
 
 echo ------------------------------------------------------------------------------------------
 echo.
-echo Check the folder whether the file u named is there are NOT
+echo *  Check the file whether it is EMPTY
 echo.
-echo If not exist then that file is not present in our server please request the owner (sanjaybyranna).
+echo *  If EMPTY then that file is not present in our server please request the owner (sanjaybyranna).
  
 echo. 
-echo (or) try typing if ur a Human and have any one of the two GOD given hands.
+echo *  (or) try typing if ur a Human and have any one of the two GOD given hands.
 echo.
 echo ------------------------------------------------------------------------------------------
 echo.
-TIMEOUT /T 60
+echo *  CTRL + C  to EXIT 
+echo.
+set /p answer5= *  [OR] Press " Enter " to continue : 
+mclab.bat
